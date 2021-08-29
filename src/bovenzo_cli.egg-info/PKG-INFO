@@ -1,16 +1,33 @@
-# Bovenzo cli
+Metadata-Version: 2.1
+Name: bovenzo-cli
+Version: 0.1.0rc0
+Summary: This package provides one cli with commands used commonly by Bovenzo
+Home-page: https://github.com/alissonbovenzo/bovenzo-cli
+Author: Alisson Desandro Bovenzo
+Author-email: bovenzo@astrahus.tech
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
 
-## Considerações
+#Bovenzo cli
+
+##Considerações
 
 ### Mensagem de impacto para dramatizar uma verdade
  Sua vida pode ser mais simples se você automatizar as partes chatas.
 
 
-### Motivação
+###Motivação
 Basicamente acordei num dia e notei quantas coisas chatas eu faço e que me gastam um certo tempo digitando tudo.
 Eu poderia simplesmente automatizar aos poucos tudo que eu faço de repetitivo.
 
-## Instalação
+##Instalação
 
 Quando eu por o setuptools fica mais facil, até lá, execute os comandos:
 
@@ -21,8 +38,9 @@ Quando eu por o setuptools fica mais facil, até lá, execute os comandos:
 5) (opcional) `ln -s PATH_CLI/bovenzo.py /usr/local/bin/bo`
 
 
-# FAQ
+#FAQ
 
 Não está conseguindo executar a cli por algum motivo?
     você pode permissionar o arquivo bovenzo.py com `chmod +x /path/do/bovenzo-cli/bovenzo.py`
 Com isso você evitará diversos problemas
+

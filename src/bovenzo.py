@@ -37,6 +37,9 @@ def redes():
 def nodejs():
     """Grupo de comandos de NodeJS"""
 
+@click.group(name="git")
+def git():
+    """Grupo de comandos para git"""
 
 @click.group(name="finder")
 def nodejs():
