@@ -11,18 +11,24 @@ Basicamente acordei num dia e notei quantas coisas chatas eu faço e que me gast
 Eu poderia simplesmente automatizar aos poucos tudo que eu faço de repetitivo.
 
 ## Instalação
-
-Quando eu por o setuptools fica mais facil, até lá, execute os comandos:
-
-1) `cd <diretorio/do/projeto/bovenzo-cli/>` 
-2) `PATH_CLI=(pwd)` -  para pegar o path full que chamaremos agora de **PATH_CLI**
-3) ` ln -s PATH_CLI/bovenzo.py /usr/local/bin/bovenzo`
-4) (opcional) Caso queira ter a cli acessando pelo comando de `bo` e `bovenzo`, execute o step a seguir
-5) (opcional) `ln -s PATH_CLI/bovenzo.py /usr/local/bin/bo`
+`pip install -i https://test.pypi.org/simple/ bovenzo-cli`
 
 
-# FAQ
+## comando principal
+O cli é invocado utilizando `bovenzo comandos` ou simplesmente `bo comandos`
 
-Não está conseguindo executar a cli por algum motivo?
-    você pode permissionar o arquivo bovenzo.py com `chmod +x /path/do/bovenzo-cli/bovenzo.py`
-Com isso você evitará diversos problemas
+## Comandos
+
+### SPS
+`bovenzo sps [--port]`
+
+Comando que criar um servidor HTTP na pasta atual e abre o navegador pra você
+* Por padrão esta porta é a 8181
+
+## redes
+### vport
+`bovenzo redes vport [--port]`
+
+Retorna a busca de processos sobre uma porta de rede específica
+* Por padrão esta porta é a 8181
+

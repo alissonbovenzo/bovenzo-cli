@@ -1,0 +1,11 @@
+LICENSE
+README.md
+bovenzo.py
+pyproject.toml
+setup.py
+bovenzo_cli.egg-info/PKG-INFO
+bovenzo_cli.egg-info/SOURCES.txt
+bovenzo_cli.egg-info/dependency_links.txt
+bovenzo_cli.egg-info/entry_points.txt
+bovenzo_cli.egg-info/requires.txt
+bovenzo_cli.egg-info/top_level.txt

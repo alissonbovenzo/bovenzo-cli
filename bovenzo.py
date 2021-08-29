@@ -28,6 +28,13 @@ def simple_server(port):
     os.system(f"kill {server_pid}")
 
 
+@click.command("test:pypi")
+@click.argument("dist")
+def publish_pypi(dist="dist/*"):
+    """Roda o Twine para publicar o pacote no pypi a partir do build da pasta dist"""
+    os.sytem(f"python3 -m twine upload --repository testpypi {dist}")
+
+
 @click.group(name="redes")
 def redes():
     """Grupo de comandos de rede"""
@@ -45,16 +52,23 @@ def git():
 def nodejs():
     """Grupo de comandos de procura de arquivos e outros caminhos"""
 
-
+@click.group(name="publish")
+def publish():
+    """Grupo de comandos de publicação"""
 
 @click.group(name="bovenzo")
 def cli():
     """Linha de comando com comandos úteis normalmente usados pelo Bovenzo"""
     pass
 
+
 redes.add_command(verify_port)
+
+publish.add_command(publish_pypi)
+
 cli.add_command(simple_server)
 cli.add_command(redes)
+cli.add_command(publish)
 
 if __name__ == '__main__':
     cli()

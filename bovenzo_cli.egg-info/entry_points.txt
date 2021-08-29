@@ -1,0 +1,5 @@
+
+        [console_scripts]
+        bovenzo=bovenzo:cli
+        bo=bovenzo:cli
+    
