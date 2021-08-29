@@ -29,10 +29,11 @@ def simple_server(port):
 
 
 @click.command("test:pypi")
-@click.argument("dist")
-def publish_pypi(dist="dist/*"):
+@click.option("--dist", default='dist/*', help="Pasta dos arquivos de distribuição")
+def publish_pypi(dist):
     """Roda o Twine para publicar o pacote no pypi a partir do build da pasta dist"""
-    os.sytem(f"python3 -m twine upload --repository testpypi {dist}")
+    os.system(f"python3 -m twine upload --repository testpypi {dist}")
+
 
 
 @click.group(name="redes")

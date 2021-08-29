@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: bovenzo-cli
-Version: 0.3.10
+Version: 0.3.12
 Summary: A Simple CLI to help u with commands used commonly by me, Bovenzo
 Home-page: https://github.com/alissonbovenzo/bovenzo-cli
 Author: Alisson Desandro Bovenzo
@@ -29,9 +29,25 @@ Eu poderia simplesmente automatizar aos poucos tudo que eu faço de repetitivo.
 
 ## Instalação
 `pip install -i https://test.pypi.org/simple/ bovenzo-cli`
-# FAQ
 
-Não está conseguindo executar a cli por algum motivo?
-    você pode permissionar o arquivo bovenzo.py com `chmod +x /path/do/bovenzo-cli/bovenzo.py`
-Com isso você evitará diversos problemas
+
+## comando principal
+O cli é invocado utilizando `bovenzo comandos` ou simplesmente `bo comandos`
+
+## Comandos
+
+### SPS
+`bovenzo sps [--port]`
+
+Comando que criar um servidor HTTP na pasta atual e abre o navegador pra você
+* Por padrão esta porta é a 8181
+
+## redes
+### vport
+`bovenzo redes vport [--port]`
+
+Retorna a busca de processos sobre uma porta de rede específica
+* Por padrão esta porta é a 8181
+
+
 

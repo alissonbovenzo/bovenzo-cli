@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="bovenzo-cli",
-    version='0.3.11',
+    version='0.4.13',
     py_modules=["bovenzo"],
     include_package_data=True,
     install_requires=["click"],
